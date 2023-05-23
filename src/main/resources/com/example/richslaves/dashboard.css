@@ -1,0 +1,15 @@
+#panel{
+    -fx-background-color: #0A0F23;
+}
+
+#buttonFullName{
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+
+}
+
+#dateTimeLabel{
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+
+}

@@ -1,0 +1,59 @@
+#panel{
+    -fx-background-color: #0A0F23;
+}
+
+#panelDashboard{
+    -fx-background-color: #0A0F23;
+}
+
+#buttonRegister{
+    -fx-min-width: 120.29;
+    -fx-min-height: 29.7;
+}
+
+#buttonLogin{
+    -fx-min-width: 120.29;
+    -fx-min-height: 29.7;
+}
+
+.button {
+    -fx-background-color: #000000;
+    -fx-font-size: 17;
+    -fx-border-color: #36E1F3;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-padding: 10 20 10 20;
+    -fx-effect: dropshadow[glow, #000000, 0, 0, 0, 0];
+    -fx-transition: -fx-background-color 0.3s, -fx-effect 0.3s;
+    -fx-alignment: center;
+}
+
+.button:hover {
+    -fx-background-color: #36E1F3;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow[glow, #36E1F3, 0, 0, 10, 2],
+    dropshadow[glow, #36E1F3, 0, 0, 2, 2],
+    dropshadow[glow, #36E1F3, 0, 0, -2, -2],
+    dropshadow[glow, #36E1F3, 0, 0, 2, -2],
+    dropshadow[glow, #36E1F3, 0, 0, -2, 2];
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-pref-width: 320;
+    -fx-font-size: 25;
+}
+
+.text-field:focused {
+    -fx-text-fill: white;
+}
+
+
+
+
+
+
+

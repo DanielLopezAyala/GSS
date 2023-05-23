@@ -1,0 +1,45 @@
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-pref-width: 320;
+    -fx-font-size: 25;
+}
+
+#panel{
+    -fx-background-color: #0A0F23;
+}
+
+#inputUserRegister{
+    -fx-pref-width: 250;
+    -fx-font-size: 18;
+}
+
+#inputNameRegister{
+    -fx-pref-width: 250;
+    -fx-font-size: 18;
+}
+#inputEmailRegister{
+    -fx-pref-width: 250;
+    -fx-font-size: 18;
+}
+
+#inputPhoneRegister{
+    -fx-pref-width: 250;
+    -fx-font-size: 18;
+}
+
+#inputAgeRegister{
+    -fx-pref-width: 250;
+    -fx-font-size: 18;
+}
+
+#inputAddressRegister{
+    -fx-pref-width: 250;
+    -fx-font-size: 18;
+}
+
+#inputPasswordRegister{
+    -fx-pref-width: 250;
+    -fx-font-size: 18;
+}
