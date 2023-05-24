@@ -7,6 +7,7 @@ module com.example.richslaves {
             requires net.synedra.validatorfx;
                 requires org.kordamp.bootstrapfx.core;
     requires java.sql;
+    requires mysql.connector.j;
 
     opens com.example.richslaves to javafx.fxml;
     exports com.example.richslaves;
