@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #0A0F23;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.richslaves.HelloController">
+<BorderPane fx:id="mainEdge" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #0A0F23;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.richslaves.DashboardController">
    <top>
       <AnchorPane prefHeight="130.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
          <children>
@@ -25,7 +24,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="830.0" layoutY="51.0" text="dd/mm/yyyy | 01:51" textFill="WHITE" AnchorPane.rightAnchor="40.0">
+            <Label fx:id="timerLabel" layoutX="830.0" layoutY="51.0" text="Label" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
@@ -34,14 +33,14 @@
       </AnchorPane>
    </top>
    <left>
-      <AnchorPane prefHeight="470.0" prefWidth="234.0" stylesheets="@hello-style.css" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="470.0" prefWidth="234.0" stylesheets="@styles/hello-style.css" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="59.0" layoutY="82.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="CANNED " AnchorPane.rightAnchor="59.39999999999998" />
-            <Button layoutX="59.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="SAUSAGES " AnchorPane.rightAnchor="59.39999999999998" />
-            <Button layoutX="59.0" layoutY="146.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="MEAT " AnchorPane.rightAnchor="59.39999999999998" />
-            <Button layoutX="59.0" layoutY="209.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="BREAD " AnchorPane.rightAnchor="59.39999999999998" />
-            <Button layoutX="59.0" layoutY="271.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="LIQUORS " AnchorPane.rightAnchor="59.39999999999998" />
-            <Button layoutX="59.0" layoutY="336.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="SNACKS" AnchorPane.rightAnchor="59.39999999999998" />
+            <Button layoutX="59.0" layoutY="82.0" mnemonicParsing="false" onMouseClicked="#cannedPage" prefHeight="40.0" prefWidth="140.0" text="CANNED " AnchorPane.rightAnchor="59.39999999999998" />
+            <Button layoutX="59.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#sausagesPage" prefHeight="40.0" prefWidth="140.0" text="SAUSAGES " AnchorPane.rightAnchor="59.39999999999998" />
+            <Button layoutX="59.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#meatPage" prefHeight="40.0" prefWidth="140.0" text="MEAT " AnchorPane.rightAnchor="59.39999999999998" />
+            <Button layoutX="59.0" layoutY="209.0" mnemonicParsing="false" onMouseClicked="#breadPage" prefHeight="40.0" prefWidth="140.0" text="BREAD " AnchorPane.rightAnchor="59.39999999999998" />
+            <Button layoutX="59.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#liquorsPage" prefHeight="40.0" prefWidth="140.0" text="LIQUORS " AnchorPane.rightAnchor="59.39999999999998" />
+            <Button layoutX="59.0" layoutY="336.0" mnemonicParsing="false" onMouseClicked="#snacksPage" prefHeight="40.0" prefWidth="140.0" text="SNACKS" AnchorPane.rightAnchor="59.39999999999998" />
          </children>
       </AnchorPane>
    </left>
@@ -56,10 +55,10 @@
                   <TableColumn prefWidth="98.0" text="Column X" />
               </columns>
             </TableView>
-            <Button layoutX="576.0" layoutY="87.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="140.0" stylesheets="@hello-style.css" text="SHOW ITEM" />
-            <Button layoutX="576.0" layoutY="156.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" stylesheets="@hello-style.css" text="MODIFY" />
-            <Button layoutX="576.0" layoutY="230.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" stylesheets="@hello-style.css" text="DELETE" />
-            <Button layoutX="576.0" layoutY="304.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" stylesheets="@hello-style.css" text="ADD" />
+            <Button layoutX="576.0" layoutY="87.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="140.0" stylesheets="@styles/hello-style.css" text="SHOW ITEM" />
+            <Button layoutX="576.0" layoutY="156.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" stylesheets="@styles/hello-style.css" text="MODIFY" />
+            <Button layoutX="576.0" layoutY="230.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" stylesheets="@styles/hello-style.css" text="DELETE" />
+            <Button layoutX="576.0" layoutY="304.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" stylesheets="@styles/hello-style.css" text="ADD" />
          </children>
       </AnchorPane>
    </center>
