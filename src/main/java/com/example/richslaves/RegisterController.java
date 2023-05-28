@@ -9,8 +9,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class RegisterController {
+public class RegisterController{
     public void switchToScene1(ActionEvent event) throws IOException {
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
         Parent root = loader.load();
 
@@ -18,6 +19,8 @@ public class RegisterController {
         Scene scene = stage.getScene();
 
         stage.setResizable(false);
+        stage.setWidth(1000);
+        stage.setHeight(600);
 
         scene.setRoot(root);
         stage.setScene(scene);

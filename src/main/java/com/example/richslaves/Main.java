@@ -11,7 +11,7 @@ import java.net.URL;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Main.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("main.fxml"));
         Scene scene1 = new Scene(fxmlLoader.load(), 800, 400);
 
         URL resourceUrl = this.getClass().getResource("styles/hello-style.css");

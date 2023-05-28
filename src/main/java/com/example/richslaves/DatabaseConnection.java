@@ -9,12 +9,12 @@ public class DatabaseConnection {
     public Connection getConnection(){
         String databaseName = " ";
         String databaseUser = " ";
-        String databaPassword = " ";
+        String databasePassword = " ";
         String url = "jdbc:mysql//localhost/" + databaseName;
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            databaseLink = DriverManager.getConnection(url, databaseUser, databaPassword);
+            databaseLink = DriverManager.getConnection(url, databaseUser, databasePassword);
         } catch (Exception e) {
             e.printStackTrace();
         }

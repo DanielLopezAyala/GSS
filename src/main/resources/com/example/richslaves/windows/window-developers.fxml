@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="350.0" prefWidth="450.0" style="-fx-background-color: #0A0F23;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.richslaves.DashboardController">
+   <children>
+      <Label layoutX="0.0" layoutY="0.0" text="Developers of: Rich Slaves" textFill="WHITE" alignment="center">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="0.0" layoutY="74.0" text="Jonathan David Abad Estrada - (Finnisimo)" textFill="WHITE" alignment="center">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="0.0" layoutY="130.0" text="Diego Adrian Erquicia Romero" textFill="WHITE" alignment="center">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="0.0" layoutY="186.0" text="Daniel López Ayala - (k0ry)" textFill="WHITE" alignment="center">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="0.0" layoutY="242.0" text="Diego Terrazas Sanchez" textFill="WHITE" alignment="center">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="0.0" layoutY="298.0" text="Cristian Manrique Castaño - (CCMC)" textFill="WHITE" alignment="center">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

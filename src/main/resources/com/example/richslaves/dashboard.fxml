@@ -1,65 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane fx:id="mainEdge" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #0A0F23;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.richslaves.DashboardController">
    <top>
-      <AnchorPane prefHeight="130.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="126.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="460.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Images/logo.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="46.0" layoutY="51.0" text="Full Name" textFill="WHITE" AnchorPane.leftAnchor="40.0">
+            <Label fx:id="employeeLabel" layoutX="14.0" layoutY="49.0" onMouseClicked="#viewEmployee" text="Full name" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label fx:id="timerLabel" layoutX="830.0" layoutY="51.0" text="Label" textFill="WHITE">
+            <Label fx:id="informationDevelopersLabel" layoutX="927.0" layoutY="39.0" onMouseClicked="#viewDevelopers" prefHeight="48.0" prefWidth="46.0" stylesheets="@styles/dashboard.css" text="i" textFill="WHITE">
                <font>
-                  <Font size="18.0" />
+                  <Font size="24.0" />
                </font>
             </Label>
-         </children>
-      </AnchorPane>
+            <Button layoutX="371.0" layoutY="38.0" mnemonicParsing="false" onAction="#switchToSceneLogin" prefHeight="50.0" prefWidth="102.0" text="Log out">
+               <stylesheets>
+                  <URL value="@styles/hello-style.css" />
+                  <URL value="@styles/dashboard.css" />
+               </stylesheets>
+            </Button>
+         </children></AnchorPane>
    </top>
-   <left>
-      <AnchorPane prefHeight="470.0" prefWidth="234.0" stylesheets="@styles/hello-style.css" BorderPane.alignment="CENTER">
+   <right>
+      <AnchorPane prefHeight="474.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="59.0" layoutY="82.0" mnemonicParsing="false" onMouseClicked="#cannedPage" prefHeight="40.0" prefWidth="140.0" text="CANNED " AnchorPane.rightAnchor="59.39999999999998" />
-            <Button layoutX="59.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#sausagesPage" prefHeight="40.0" prefWidth="140.0" text="SAUSAGES " AnchorPane.rightAnchor="59.39999999999998" />
-            <Button layoutX="59.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#meatPage" prefHeight="40.0" prefWidth="140.0" text="MEAT " AnchorPane.rightAnchor="59.39999999999998" />
-            <Button layoutX="59.0" layoutY="209.0" mnemonicParsing="false" onMouseClicked="#breadPage" prefHeight="40.0" prefWidth="140.0" text="BREAD " AnchorPane.rightAnchor="59.39999999999998" />
-            <Button layoutX="59.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#liquorsPage" prefHeight="40.0" prefWidth="140.0" text="LIQUORS " AnchorPane.rightAnchor="59.39999999999998" />
-            <Button layoutX="59.0" layoutY="336.0" mnemonicParsing="false" onMouseClicked="#snacksPage" prefHeight="40.0" prefWidth="140.0" text="SNACKS" AnchorPane.rightAnchor="59.39999999999998" />
-         </children>
+            <Button layoutX="39.0" layoutY="39.0" mnemonicParsing="false" onMouseClicked="#viewShowItemWindow" stylesheets="@styles/hello-style.css" text="Show Item" />
+            <Button layoutX="38.0" layoutY="132.0" mnemonicParsing="false" onMouseClicked="#viewModifyWindow" prefHeight="50.0" prefWidth="123.0" stylesheets="@styles/hello-style.css" text="Modify" />
+            <Button layoutX="38.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#viewDeleteWindow" prefHeight="49.0" prefWidth="124.0" stylesheets="@styles/hello-style.css" text="Delete" />
+            <Button layoutX="39.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#viewAddWindow" prefHeight="49.0" prefWidth="121.0" stylesheets="@styles/hello-style.css" text="Add" />
+         </children></AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="474.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <Button layoutX="37.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#sausagesPage" stylesheets="@styles/hello-style.css" text="SAUSAGES" />
+         <Button layoutX="38.0" layoutY="77.0" mnemonicParsing="false" onMouseClicked="#cannedPage" prefHeight="50.0" prefWidth="121.0" stylesheets="@styles/hello-style.css" text="CANNED" />
+         <Button layoutX="37.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#meatPage" prefHeight="50.0" prefWidth="123.0" stylesheets="@styles/hello-style.css" text="MEAT" />
+         <Button layoutX="38.0" layoutY="222.0" mnemonicParsing="false" onMouseClicked="#breadPage" prefHeight="50.0" prefWidth="123.0" stylesheets="@styles/hello-style.css" text="BREAD" />
+         <Button layoutX="37.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#liquorsPage" prefHeight="50.0" prefWidth="122.0" stylesheets="@styles/hello-style.css" text="LIQUORS" />
+         <Button layoutX="37.0" layoutY="371.0" mnemonicParsing="false" onMouseClicked="#snacksPage" prefHeight="49.0" prefWidth="122.0" stylesheets="@styles/hello-style.css" text="SNACKS" />
       </AnchorPane>
    </left>
    <center>
-      <AnchorPane prefHeight="470.0" prefWidth="776.0" BorderPane.alignment="CENTER">
-         <children>
-            <TableView layoutX="7.0" layoutY="14.0" prefHeight="408.0" prefWidth="555.0">
-              <columns>
-                <TableColumn prefWidth="71.19998359680176" text="C1" />
-                <TableColumn prefWidth="283.99999237060547" text="C2" />
-                  <TableColumn prefWidth="98.0" text="Column X" />
-                  <TableColumn prefWidth="98.0" text="Column X" />
-              </columns>
-            </TableView>
-            <Button layoutX="576.0" layoutY="87.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="140.0" stylesheets="@styles/hello-style.css" text="SHOW ITEM" />
-            <Button layoutX="576.0" layoutY="156.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" stylesheets="@styles/hello-style.css" text="MODIFY" />
-            <Button layoutX="576.0" layoutY="230.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" stylesheets="@styles/hello-style.css" text="DELETE" />
-            <Button layoutX="576.0" layoutY="304.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" stylesheets="@styles/hello-style.css" text="ADD" />
-         </children>
-      </AnchorPane>
+      <AnchorPane prefHeight="445.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

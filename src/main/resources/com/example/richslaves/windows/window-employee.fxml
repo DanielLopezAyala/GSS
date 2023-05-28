@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="500.0" style="-fx-background-color: #0A0F23;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.richslaves.EmployeeController">
+   <Label layoutX="40.0" layoutY="29.0" prefHeight="27.0" prefWidth="420.0" text="User" textFill="WHITE">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label layoutX="40.0" layoutY="82.0" prefHeight="27.0" prefWidth="420.0" text="Full name" textFill="WHITE">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label layoutX="40.0" layoutY="138.0" prefHeight="27.0" prefWidth="420.0" text="Email" textFill="WHITE">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label layoutX="40.0" layoutY="195.0" prefHeight="27.0" prefWidth="420.0" text="Phone Number" textFill="WHITE">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label layoutX="40.0" layoutY="252.0" prefHeight="27.0" prefWidth="420.0" text="Age" textFill="WHITE">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Button layoutX="284.0" layoutY="319.0" mnemonicParsing="false" onMouseClicked="#viewChangePasswordWindow" stylesheets="@../styles/hello-style.css" text="Change password" />
+   <Button layoutX="40.0" layoutY="319.0" mnemonicParsing="false" onMouseClicked="#viewChangeEmailWindow" stylesheets="@../styles/hello-style.css" text="Change email" />
+</AnchorPane>

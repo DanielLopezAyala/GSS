@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="270.0" prefWidth="450.0" style="-fx-background-color: #0A0F23;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.richslaves.EmployeeController">
+   <stylesheets>
+      <URL value="@../styles/hello-style.css" />
+      <URL value="@../styles/window-style.css" />
+   </stylesheets>
+   <children>
+      <TextField layoutX="65.0" layoutY="14.0" promptText="Email" />
+      <TextField layoutX="65.0" layoutY="100.0" promptText="Confirm Email" />
+      <Button layoutX="153.0" layoutY="184.0" mnemonicParsing="false" text="Change Email" />
+   </children>
+</AnchorPane>

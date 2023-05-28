@@ -13,3 +13,22 @@
     -fx-font-size: 20;
 
 }
+
+#informationDevelopersLabel{
+    -fx-border-color: #36E1F3;
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+    -fx-padding: 5;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+#informationDevelopersLabel:hover{
+    -fx-background-color: #36E1F3;
+    -fx-text-fill: black;
+
+}
+
+#employeeLabel:hover{
+    -fx-underline: true;
+}
